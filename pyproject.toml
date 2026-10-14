@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clics-row-occupancy"
+version = "0.1.0"
+description = "Reproducible CLICS row-occupancy and degree-preserving colexification null models"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.0,<3", "scipy>=1.11,<2", "matplotlib>=3.8,<4", "openpyxl>=3.1,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+lexrow = "lexrow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

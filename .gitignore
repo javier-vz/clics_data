@@ -1,0 +1,16 @@
+# Original CLICS data: must be obtained separately
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/results/*
+!/results/.gitkeep
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+.idea/
+.vscode/
+*.log
+.DS_Store

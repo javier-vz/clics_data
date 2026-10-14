@@ -1,0 +1,14 @@
+name: clics-row
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - pandas>=2.0
+  - scipy>=1.11
+  - matplotlib>=3.8
+  - openpyxl>=3.1
+  - pytest>=8
+  - pip
+  - pip:
+      - -e .
